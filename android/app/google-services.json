@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "805556344248",
+    "project_id": "studentmanagerweek12",
+    "storage_bucket": "studentmanagerweek12.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805556344248:android:6a62421c8d660ad1796b4d",
+        "android_client_info": {
+          "package_name": "com.example.week12_student_manager"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPZjpnXyn5eIP61fDHjApgSo0q7odmaE0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
