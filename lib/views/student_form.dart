@@ -6,8 +6,9 @@ import 'dart:io';
 
 class StudentForm extends StatefulWidget {
   final Student? student;
+  final VoidCallback onStudentAdded;
 
-  StudentForm({this.student});
+  StudentForm({this.student, required this.onStudentAdded});
 
   @override
   _StudentFormState createState() => _StudentFormState();
@@ -126,7 +127,8 @@ class _StudentFormState extends State<StudentForm> {
                       await _controller.updateStudent(student, _imageFile);
                     }
 
-                    Navigator.pop(context);
+                    widget.onStudentAdded();
+                    Navigator.pop(context, true);
                   }
                 },
                 child: Text(widget.student == null ? 'Add Student' : 'Update Student'),
